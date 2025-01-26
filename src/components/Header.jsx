@@ -1,7 +1,7 @@
-import websiteIcon from "/src/assets/pages/Home/website.png";
-import homeIcon from "/src/assets/components/Header/home.png";
-import portfolioIcon from "/src/assets/components/Header/portrait.png";
-import cvIcon from "/src/assets/components/Header/group.png";
+import websiteIcon from "/src/assets/pages/Home/website.webp";
+import homeIcon from "/src/assets/components/Header/home.webp";
+import portfolioIcon from "/src/assets/components/Header/portrait.webp";
+import cvIcon from "/src/assets/components/Header/group.webp";
 
 import '/src/css/components/Header.css';
 

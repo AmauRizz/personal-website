@@ -1,9 +1,8 @@
-import profileIcon from "/src/assets/pages/Home/profile.jpg";
-import websiteIcon from "/src/assets/pages/Home/website.png";
-import githubIcon from "/src/assets/pages/Home/github.png";
-import linkedinIcon from "/src/assets/pages/Home/linkedin.png";
-import buymeacoffeeIcon from "/src/assets/pages/Home/coffee.png";
-import mailIcon from "/src/assets/pages/Home/mail.png";
+import profileIcon from "/src/assets/pages/Home/profile.webp";
+import githubIcon from "/src/assets/pages/Home/github.webp";
+import linkedinIcon from "/src/assets/pages/Home/linkedin.webp";
+import buymeacoffeeIcon from "/src/assets/pages/Home/coffee.webp";
+import mailIcon from "/src/assets/pages/Home/mail.webp";
 
 import { toast } from 'react-toastify';
 
