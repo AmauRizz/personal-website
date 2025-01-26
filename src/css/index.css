@@ -1,0 +1,18 @@
+:root {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  height: 100%;
+
+  user-select: none;
+
+  background: linear-gradient(60deg, #a651bd, #387c99);
+  cursor: default;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
