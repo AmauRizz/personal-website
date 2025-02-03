@@ -8,7 +8,7 @@
 
   user-select: none;
 
-  background: linear-gradient(60deg, #a651bd, #387c99);
+  background: linear-gradient(60deg, var(--background-color1), var(--background-color2));
   cursor: default;
 
   font-synthesis: none;

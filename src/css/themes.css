@@ -1,0 +1,29 @@
+/* Light theme selected */
+:root {
+    --background-color1: rgba(166, 81, 189, 100);
+    --background-color2: rgba(56, 124, 153, 100);
+
+    --button-background-color: rgba(255, 255, 255, 1);
+
+    --text-color1: rgba(255, 255, 255, 1);
+    --text-color2: rgba(0, 0, 0, 1);
+
+    --border-color: rgba(0, 0, 0, 1);
+    --shadow-color: rgba(0, 0, 0, 1);
+
+
+}
+
+/* Dark theme selected */
+[data-theme="dark"] {
+    --background-color1: rgb(56, 28, 66);
+    --background-color2: rgb(21, 44, 55);
+
+    --button-background-color: rgb(255, 255, 255);
+
+    --text-color1: rgb(0, 0, 0);
+    --text-color2: rgb(255, 255, 255);
+
+    --border-color: rgb(0, 0, 0);
+    --shadow-color: rgb(0, 0, 0);
+}

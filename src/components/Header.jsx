@@ -1,38 +1,47 @@
-import websiteIcon from "/src/assets/pages/Home/website.webp";
-import homeIcon from "/src/assets/components/Header/home.webp";
-import portfolioIcon from "/src/assets/components/Header/portrait.webp";
-import cvIcon from "/src/assets/components/Header/group.webp";
+import profileIcon from "/src/assets/profile.webp";
 
 import '/src/css/components/Header.css';
 
 function Header() {
+    function toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    }
     return (
         <>
             <header>
-                <div className={"info"} onClick={ () => window.open( "/", "_self" ) }>
-                    <img src={websiteIcon} alt={"Website-Logo"}/>
-                    <h1>amaurymulcey.fr</h1>
+                <div>
+                    <a className={"info"} href={"/Home"}>
+                        <img src={profileIcon} alt={"Website-Logo"}/>
+                        <h1>amaurymulcey.fr</h1>
+                    </a>
                 </div>
 
-                <nav className={"main-navigation"}>
-                    <ul className={"main-navigation__List"}>
-                        <li className={"main-navigation__Link"}
-                            onClick={() => window.open("/", "_self")}
-                        >
-                            <img src={portfolioIcon} alt={"Home-Logo"}/>
-                            <p>Portfolio</p>
+                <nav className={"header-navigation"}>
+                    <ul className={"header-navigation__List"}>
+                        <li>
+                            <a className={"header-navigation__Link header-navigation__Link--selected"} href={"/Home"}>
+                                <p>Home</p>
+                            </a>
                         </li>
-                        <li className={"main-navigation__Link--Active"}
-                            onClick={() => window.open("/", "_self")}
-                        >
-                            <img src={homeIcon} alt={"Portrait-Logo"}/>
-                            <p>Home</p>
+                        <li>
+                            <a className={"header-navigation__Link"} href={"/Portfolio"}>
+                                <p>Portfolio</p>
+                            </a>
                         </li>
-                        <li className={"main-navigation__Link"}
-                            onClick={() => window.open("/", "_self")}
-                        >
-                            <img src={cvIcon} alt={"Group-Logo"}/>
-                            <p>CV</p>
+                        <li>
+                            <a className={"header-navigation__Link"} href={"/Resume"}>
+                                <p>Resume</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a className={"header-navigation__Link"} href={"/Contact"}>
+                                <p>Contact</p>
+                            </a>
                         </li>
                     </ul>
                 </nav>
