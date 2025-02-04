@@ -19,10 +19,10 @@ function Home() {
                 </section>
 
                 <section className={"main__content"}>
-                    <ul className={"content__social-List"}>
+                    <ul className={"content-social__List"}>
                         <li>
-                            <a className={"content__social-Link"} href={"https://github.com/AmauRizz"} target={"_blank"} rel={"noopener noreferrer"}>
-                                <div className={"social-Link__info"}>
+                            <a className={"content-social__Link"} href={"https://github.com/AmauRizz"} target={"_blank"} rel={"noopener noreferrer"}>
+                                <div className={"social-link__Info"}>
                                     <img src={githubIcon} alt={"Github-Icon"}/>
                                     <div>
                                         <h2>GitHub</h2>
@@ -33,8 +33,8 @@ function Home() {
                             </a>
                         </li>
                         <li>
-                            <a className={"content__social-Link"} href={"https://www.linkedin.com/in/amaury-mulcey-pro/"} target={"_blank"} rel={"noopener noreferrer"}>
-                                <div className={"social-Link__info"}>
+                            <a className={"content-social__Link"} href={"https://www.linkedin.com/in/amaury-mulcey-pro/"} target={"_blank"} rel={"noopener noreferrer"}>
+                                <div className={"social-link__Info"}>
                                     <img src={linkedinIcon} alt={"LinkedIn-Icon"}/>
                                     <div>
                                         <h2>LinkedIn</h2>
@@ -45,8 +45,8 @@ function Home() {
                             </a>
                         </li>
                         <li>
-                            <a className={"content__social-Link"} href={"https://buymeacoffee.com/amaurizz"} target={"_blank"} rel={"noopener noreferrer"}>
-                                <div className={"social-Link__info"}>
+                            <a className={"content-social__Link"} href={"https://buymeacoffee.com/amaurizz"} target={"_blank"} rel={"noopener noreferrer"}>
+                                <div className={"social-link__Info"}>
                                     <img src={buymeacoffeeIcon} alt={"Buy-Me-A-Coffee-Icon"}/>
                                     <div>
                                         <h2>Buy Me a Coffee</h2>

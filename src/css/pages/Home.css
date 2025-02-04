@@ -53,11 +53,12 @@
         text-shadow: 1px 1px 4px var(--shadow-color);
     }
 
+
     .main__content {
         margin-top: 1%;
     }
 
-    .content__social-List {
+    .content-social__List {
         margin-top: 1rem;
 
         display: flex;
@@ -65,7 +66,7 @@
         align-items: center;
     }
 
-    .content__social-Link {
+    .content-social__Link {
         margin-top: 1rem;
 
         width: 30rem;
@@ -85,7 +86,7 @@
         transition: background-color 0.2s, transform 0.3s;
     }
 
-    .content__social-Link .external-link-icon {
+    .content-social__Link .external-link-icon {
         margin-left: 0.25rem;
         margin-right: 1rem;
         padding: 0.5rem;
@@ -96,32 +97,32 @@
         transition: transform 0.3s;
     }
 
-    .content__social-List li:first-child .content__social-Link {
+    .content-social__List li:first-child .content-social__Link {
         margin-top: 0;
     }
 
-    .content__social-Link:hover,
-    .content__social-Link:focus {
+    .content-social__Link:hover,
+    .content-social__Link:focus {
         transform: translate(-0.15rem, -0.15rem);
 
         cursor: pointer;
     }
 
-    .content__social-Link:hover .external-link-icon,
-    .content__social-Link:focus .external-link-icon {
+    .content-social__Link:hover .external-link-icon,
+    .content-social__Link:focus .external-link-icon {
         transform: rotate(90deg);
     }
 
-    .content__social-Link:active {
+    .content-social__Link:active {
         transform: translate(0.05rem, 0.05rem);
     }
 
-    .social-Link__info {
+    .social-link__Info {
         display: flex;
         flex-direction: row;
     }
 
-    .social-Link__info img {
+    .social-link__Info img {
         margin-right: 0.25rem;
         padding: 0.5rem;
 
@@ -129,13 +130,13 @@
         height: 2.5rem;
     }
 
-    .social-Link__info h2 {
+    .social-link__Info h2 {
         margin-bottom: 0.25rem;
         font-size: large;
         font-weight: bold;
     }
 
-    .social-Link__info div  {
+    .social-link__Info div {
         display: flex;
         flex-direction: column;
         justify-content: center;
