@@ -3,13 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
   font-size: 16px;
-
   height: 100%;
-
   user-select: none;
 
-  background: linear-gradient(60deg, var(--background-color1), var(--background-color2));
-  cursor: default;
+  background: linear-gradient(45deg, var(--background-color1), var(--background-color2));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

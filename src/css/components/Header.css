@@ -1,32 +1,29 @@
 header {
-    margin-top: 1%;
+    margin-top: 2vh;
     padding: 0.5rem;
 
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 
     position: relative;
 }
 
-.info {
+.header-info {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    margin-left: 5rem;
-
     transition: background-color 0.15s, transform 0.15s;
 }
 
-.info:hover,
-.info:focus {
+.header-info:hover,
+.header-info:focus {
     transform: translate(-0.15rem, -0.15rem);
-
-    cursor: pointer;
 }
 
-.info img {
+.header-info img {
     width: 2rem;
     height: 2rem;
 
@@ -34,7 +31,7 @@ header {
     box-shadow: 1px 1px 4px var(--shadow-color);
 }
 
-.info h1 {
+.header-info h1 {
     margin-left: 0.3rem;
 
     user-select: text;
@@ -57,6 +54,7 @@ header {
 
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .header-navigation__Link {
@@ -79,10 +77,6 @@ header {
     transition: background-color 0.15s, transform 0.15s;
 }
 
-.header-navigation__Link--selected {
-    background-color: rgb(255, 153, 223);
-}
-
 .header-navigation__List li:last-child .header-navigation__Link {
     margin-right: 0;
 }
@@ -91,8 +85,6 @@ header {
 .header-navigation__Link:focus {
     transform: translate(-0.15rem, -0.15rem);
     box-shadow: 0.15rem 0.15rem var(--shadow-color);
-
-    cursor: pointer;
 }
 
 .header-navigation__Link:active {
@@ -101,6 +93,45 @@ header {
 }
 
 .header-navigation__Link p {
+    color: var(--text-color2);
+    font-size: large;
+    font-weight: bold;
+}
+
+.header-contact {
+    width: 6rem;
+    height: 2.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--button-background-color);
+
+    border: 3px solid var(--shadow-color);
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem var(--shadow-color);
+
+    transition: background-color 0.15s, transform 0.15s;
+}
+
+.header-navigation__Link--selected {
+    background-color: rgb(255, 153, 223);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+    transform: translate(-0.15rem, -0.15rem);
+    box-shadow: 0.15rem 0.15rem var(--shadow-color);
+}
+
+.header-contact:active {
+    transform: translate(0.05rem, 0.05rem);
+    box-shadow: 0.05rem 0.05rem var(--shadow-color);
+}
+
+.header-contact p {
     color: var(--text-color2);
     font-size: large;
     font-weight: bold;

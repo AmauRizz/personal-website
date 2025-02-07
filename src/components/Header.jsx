@@ -33,7 +33,7 @@ function Header() {
         <>
             <header>
                 <div>
-                    <a className={"info"} href={"/Home"}>
+                    <a className={"header-info"} href={"/Home"}>
                         <img src={profileIcon} alt={"Website-Logo"}/>
                         <h1>amaurymulcey.fr</h1>
                     </a>
@@ -56,13 +56,12 @@ function Header() {
                                 <p>Resume</p>
                             </a>
                         </li>
-                        <li>
-                            <a className={`header-navigation__Link ${isContact ? 'header-navigation__Link--selected' :''}`} href={"/Contact"}>
-                                <p>Contact</p>
-                            </a>
-                        </li>
                     </ul>
                 </nav>
+
+                <a className={`header-contact ${isContact ? 'header-navigation__Link--selected' :''}`} href={"/Contact"}>
+                    <p>Contact</p>
+                </a>
             </header>
         </>
     )
