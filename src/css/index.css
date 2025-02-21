@@ -1,12 +1,12 @@
 :root {
-  font-family: Roboto, sans-serif;
+  font-family: 'Satoshi', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 16px;
-  height: 100%;
-  user-select: none;
+  height: auto;
+  overflow-x: hidden;
 
-  background: linear-gradient(45deg, var(--background-color1), var(--background-color2));
+  background: linear-gradient(180deg, #263382 0%, #1C2972 5%, #0B1733 35%, #091226 65%, #060C18 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

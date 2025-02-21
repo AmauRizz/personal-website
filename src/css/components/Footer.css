@@ -1,0 +1,11 @@
+.footer {
+    margin-bottom: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__copyright {
+    color: #ffffff;
+    text-align: center;
+}

@@ -1,67 +1,58 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-
-import profileIcon from "/src/assets/profile.webp";
-
-import homeIcon from "/src/assets/home.png";
-import portfolioIcon from "/src/assets/briefcase.png";
-import resumeIcon from "/src/assets/resume.png";
-import contactIcon from "/src/assets/mail.png";
+import LazyLoad from 'react-lazyload';
 
 import '/src/css/components/Header.css';
 
 function Header() {
     const location = useLocation();
-    const isHome = location.pathname === '/Home' || location.pathname === '/';
-    const isPortfolio = location.pathname === '/Portfolio';
-    const isResume = location.pathname === '/Resume';
+    const isAbout = location.hash === '#About';
+    const isProjects = location.hash === '#Projects';
+    const isHome = location.pathname === '/' && !(isProjects || isAbout);
     const isContact = location.pathname === '/Contact';
 
     useEffect(() => {
-        let title = 'AM - Home';
-        if (isPortfolio) {
-            title = 'AM - Portfolio';
-        } else if (isResume) {
-            title = 'AM - Resume';
-        } else if (isContact) {
-            title = 'AM - Contact';
+        let title = 'Portfolio - Amaury Mulcey';
+        if (isContact) {
+            title = 'Contact - Amaury Mulcey';
         }
         document.title = title;
-    }, [isContact, isPortfolio, isResume, location.pathname]);
+    }, [isContact, location.pathname]);
 
     return (
         <>
             <header>
-                <div>
-                    <a className={"header-info"} href={"/Home"}>
-                        <img src={profileIcon} alt={"Website-Logo"}/>
-                        <h1>amaurymulcey.fr</h1>
-                    </a>
-                </div>
+                <a href={"/"}>
+                    <LazyLoad>
+                        <igm src={""} alt={"Website-Logo"}/>
+                    </LazyLoad>
+                </a>
 
-                <nav className={"header-navigation"}>
-                    <ul className={"header-navigation__List"}>
+                <nav>
+                    <ul>
                         <li>
-                            <a className={`header-navigation__Link ${isHome ? 'header-navigation__Link--selected' :''}`} href={"/Home"}>
+                            <a href="/">
                                 <p>Home</p>
                             </a>
                         </li>
                         <li>
-                            <a className={`header-navigation__Link ${isPortfolio ? 'header-navigation__Link--selected' :''}`} href={"/Portfolio"}>
-                                <p>Portfolio</p>
+                            <a href="/#About">
+                                <p>About</p>
                             </a>
                         </li>
                         <li>
-                            <a className={`header-navigation__Link ${isResume ? 'header-navigation__Link--selected' :''}`} href={"/Resume"}>
-                                <p>Resume</p>
+                            <a href="/#Projects">
+                                <p>Projects</p>
                             </a>
                         </li>
                     </ul>
                 </nav>
 
-                <a className={`header-contact ${isContact ? 'header-navigation__Link--selected' :''}`} href={"/Contact"}>
-                    <p>Contact</p>
-                </a>
+                <div>
+                    <a href="/Contact">
+                        <p>Contact</p>
+                    </a>
+                </div>
             </header>
         </>
     )
